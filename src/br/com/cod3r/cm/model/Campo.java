@@ -20,7 +20,6 @@ public class Campo {
         this.linha = linha;
         this.coluna = coluna;
     }
-
     boolean adicionarVizinho(Campo vizinho){
 
         boolean linhaDiferente = linha != vizinho.linha;
@@ -41,13 +40,11 @@ public class Campo {
             return false;
         }
     }
-
     void alternarMarcacao(){
         if (!aberto){
             flag = !flag;
         }
     }
-
     boolean abrir(){
         if (!aberto && !flag){
             aberto = true;
@@ -65,5 +62,17 @@ public class Campo {
     }
     boolean vizinhacaSegura(){
         return vizinhos.stream().noneMatch(v -> v.minado);
+    }
+    void minar(){
+        minado = true;
+    }
+    public boolean isMarcado(){
+        return flag;
+    }
+    public boolean isAberto(){
+        return aberto;
+    }
+    public boolean isFechado(){
+        return !isAberto();
     }
 }

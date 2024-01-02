@@ -111,3 +111,5 @@ public class CampoTeste {
         assertTrue(campo22.isAberto() && campo11.isFechado());
     }
 }
+
+// REVISAR AULA SOBRE TESTE - CLASSE CAMPO: ABRIR # 02

@@ -1,4 +1,4 @@
-import br.com.cod3r.cm.model.Campo;
+package br.com.cod3r.cm.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
